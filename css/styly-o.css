@@ -1,0 +1,535 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+.everything {
+  overflow: clip;
+  position: relative;
+}
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/******  HEADER *******/
+#nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 8rem;
+  z-index: 1;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-basis: auto;
+  gap: 5rem;
+  margin-right: 2rem;
+  z-index: 2;
+  list-style: none;
+}
+.nav li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.5rem;
+  padding-bottom: 0.2rem;
+  border-bottom: 2px #ffffff00 solid;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.nav li .active {
+  border-bottom: 2px black solid;
+}
+.nav li a:active,
+.nav li a:hover {
+  border-bottom: 2px black solid;
+  transition: 1s;
+}
+.nav li a:link,
+.nav li a:visited {
+  color: #000;
+}
+/******  TIMELINE PAGE *******/
+/*  Timeline */
+.main-header {
+  margin: 8rem 0 12rem 0;
+  font-size: 5rem;
+  text-align: center;
+  font-family: PT Sans Narrow;
+}
+.timeline {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  font-size: 1rem;
+  margin-top: 5rem;
+}
+.timeline div:nth-child(odd) {
+  border-right: 2px dotted goldenrod;
+}
+.arrival::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: url("../img/sunflower.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 5rem;
+  height: 5rem;
+}
+.ceremony::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: url("../img/sunflower.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 5rem;
+  height: 5rem;
+}
+.photoshout::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: url("../img/sunflower.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 5rem;
+  height: 5rem;
+}
+.lunch::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: url("../img/sunflower.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 5rem;
+  height: 5rem;
+}
+.freetime::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: url("../img/sunflower.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 5rem;
+  height: 5rem;
+}
+.party::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: url("../img/sunflower.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 5rem;
+  height: 5rem;
+}
+.timeline img {
+  max-width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.timeline .time {
+  padding-top: 2rem;
+  color: goldenrod;
+  font-style: italic;
+  font-weight: bold;
+  display: block;
+  font-size: 2rem;
+}
+.timeline .text {
+  padding-top: 3rem;
+  font-size: 3.5rem;
+  font-family: PT Sans Narrow;
+  text-transform: uppercase;
+  word-spacing: 1.2rem;
+  letter-spacing: 0.5rem;
+}
+.timeline .left {
+  text-align: right;
+  padding-right: 5rem;
+  grid-column: 1;
+}
+.timeline .right {
+  text-align: left;
+  padding-left: 5rem;
+  grid-column: 2;
+}
+.yellow-circle-1 {
+  background-color: rgba(218, 165, 32, 0.245);
+  width: 50rem;
+  height: 50rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 15%;
+  left: -5%;
+  z-index: -1;
+}
+.yellow-circle-2 {
+  background-color: rgba(218, 165, 32, 0.245);
+  width: 100rem;
+  height: 100rem;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 15%;
+  left: 45%;
+  z-index: -1;
+}
+
+/******  STODOLA PAGE *******/
+.no-flow {
+  overflow: hidden;
+}
+.stodola-photo {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 3rem;
+  column-gap: 0;
+  max-width: 100%;
+  justify-items: center;
+}
+.stodola-photo img {
+  max-width: 100%;
+  height: 30rem;
+  object-fit: cover;
+  transform: scale(1);
+  opacity: 0.8;
+}
+.stodola-photo img:hover {
+  transform: scale(1.15);
+  transition: 0.5s;
+  opacity: 1;
+}
+.stodola-photo .even {
+  margin-top: 5rem;
+}
+
+/******  INCREIBLES PAGE *******/
+.incredibles-photo {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 4rem;
+  column-gap: 0;
+  max-width: 100%;
+  justify-items: center;
+}
+.photo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.photo .even {
+  margin-top: 5rem;
+}
+.photo img {
+  max-width: 100%;
+  height: 30rem;
+  object-fit: cover;
+  box-shadow: 0.5rem 1rem 2rem #00000038;
+}
+.photo h3 {
+  font-family: PT Sans Narrow;
+  font-size: 2rem;
+}
+.photo-last {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 6rem;
+}
+.photo-last img {
+  max-width: 100%;
+  height: 30rem;
+  object-fit: cover;
+}
+.photo-last h3 {
+  font-family: PT Sans Narrow;
+  font-size: 2rem;
+}
+
+/******  INFO PAGE *******/
+#nav-bar-transp {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 8rem;
+  z-index: 1;
+  position: absolute;
+  background-color: transparent;
+}
+.nav-transp {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-basis: auto;
+  gap: 5rem;
+  margin-right: 2rem;
+  z-index: 2;
+  list-style: none;
+}
+.nav-transp li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5rem;
+  padding-bottom: 0.2rem;
+  border-bottom: 2px #ffffff00 solid;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.nav-transp li .active {
+  border-bottom: 2px #fff solid;
+}
+.nav-transp li a:active,
+.nav-transp li a:hover {
+  border-bottom: 2px #fff solid;
+  transition: 1s;
+}
+.nav-transp li a:link,
+.nav-transp li a:visited {
+  color: #fff;
+}
+.info-one {
+  max-width: 100%;
+  max-height: 100vh;
+  overflow: hidden;
+  z-index: 0;
+}
+.info-one img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+.main-header.info {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  display: block;
+  /* font-family: Alice; */
+  font-family: PT Sans Narrow;
+  font-size: 5rem;
+  letter-spacing: 0.5rem;
+  color: #fff;
+  text-align: center;
+}
+.honeymoon {
+  position: absolute;
+  left: 50%;
+  top: 80%;
+  transform: translate(-50%, -50%);
+  display: block;
+  /* font-family: Alice; */
+  font-family: PT Sans Narrow;
+  text-transform: uppercase;
+  font-size: 3rem;
+  letter-spacing: 0.5rem;
+  color: #fff;
+  text-align: center;
+}
+.payment {
+  height: 100vh;
+}
+.payment h2 {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  text-align: center;
+  /* font-family: Alice; */
+  font-family: PT Sans Narrow;
+  font-size: 3rem;
+  letter-spacing: 0.5rem;
+  color: #000;
+}
+.options {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 2rem;
+  justify-content: space-around;
+  font-size: 2.5rem;
+  font-family: PT Sans Narrow;
+  text-align: center;
+}
+.options span {
+  font-size: 1.5rem;
+}
+.options .number {
+  font-size: 8rem;
+}
+.info-two {
+  max-width: 100%;
+  max-height: 100vh;
+  overflow: hidden;
+  z-index: 0;
+  position: relative;
+}
+.info-two img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+.dresscode {
+  height: 100vh;
+  position: relative;
+}
+.dresscode p {
+  padding-top: 8rem;
+  font-size: 2.5rem;
+  font-family: PT Sans Narrow;
+  text-align: center;
+}
+.article-one::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+  background-image: url("../img/sunflower.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 5rem;
+  height: 5rem;
+}
+.article-two::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translateX(-50%);
+  background-image: url("../img/sunflower.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 5rem;
+  height: 5rem;
+}
+.article-three::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  transform: translateX(-50%);
+  background-image: url("../img/sunflower.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 5rem;
+  height: 5rem;
+}
+.colour-circles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.yellow {
+  margin-top: 5rem;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+}
+.yellow.one {
+  background-color: #ffff00;
+}
+.yellow.two {
+  background-color: #ffd700;
+}
+.yellow.three {
+  background-color: #ffc800;
+}
+.yellow.four {
+  background-color: #ffb100;
+}
+.info-three {
+  max-width: 100%;
+  max-height: 100vh;
+  overflow: hidden;
+  z-index: 0;
+  position: relative;
+}
+.info-three img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+.accomodation {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 2rem;
+  justify-content: space-around;
+  padding-top: 10rem;
+  font-size: 2.5rem;
+  font-family: PT Sans Narrow;
+  text-align: center;
+  height: 100vh;
+}
+.accomodation img {
+  width: 20%;
+  align-self: center;
+  justify-self: center;
+}
+.accomodation span {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.info-four {
+  max-width: 100%;
+  max-height: 100vh;
+  overflow: hidden;
+  z-index: 0;
+  position: relative;
+}
+.info-four img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+.entertainment {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 2rem;
+  justify-content: space-around;
+  padding-top: 10rem;
+  font-size: 2.5rem;
+  font-family: PT Sans Narrow;
+  text-align: center;
+  height: 100vh;
+}
+.entertainment img {
+  width: 20%;
+  align-self: center;
+  justify-self: center;
+}
+.entertainment a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  /* font */
+}
+
+/******  FOOTER *******/
+footer p {
+  margin: 10rem 10rem 0 10rem;
+  padding: 1rem 0 2rem 0;
+  font-size: 2rem;
+  text-align: center;
+  border-top: 2px dotted goldenrod;
+}
