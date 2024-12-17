@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 html {
-  font-size: 10px;
+  font-size: 62.5%;
 }
 
 /* *:focus-visible {
@@ -23,14 +23,6 @@ html {
   z-index: 1;
 }
 
-/* #logo img {
-  max-width: 100%;
-  height: auto;
-  margin-left: 2em;
-  height: 5.3em;
-  z-index: 2;
-} */
-
 .nav {
   display: flex;
   align-items: center;
@@ -46,7 +38,6 @@ html {
   text-decoration: none;
   color: #ffffff71;
   font-size: 1.5rem;
-  padding-bottom: 0.2rem;
   border-bottom: 2px #ffffff00 solid;
   text-transform: uppercase;
   font-weight: bolder;
@@ -59,6 +50,22 @@ html {
   color: #fff;
   border-bottom: 2px #fff solid;
   transition: 1s;
+}
+
+/* mobile-nav */
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.icon-mobile-nav {
+  color: #ffffff;
+}
+
+.icon-mobile-nav[name="close"] {
+  display: none;
 }
 
 /******  MAIN-PAGE *******/
@@ -79,7 +86,6 @@ html {
   top: 25%;
   transform: translate(-50%, -50%);
   display: block;
-  /* font-family: Alice; */
   font-family: PT Sans Narrow;
   font-size: 5rem;
   letter-spacing: 0.5rem;
@@ -104,16 +110,6 @@ html {
   color: #ff5757;
   font-weight: bold;
 }
-.name {
-  position: absolute;
-  left: 50%;
-  top: 40%;
-  transform: translate(-50%, -50%);
-  display: block;
-  font-family: Alice;
-  font-size: 3rem;
-  color: #fff;
-}
 .info-grid {
   position: absolute;
   left: 50%;
@@ -124,7 +120,7 @@ html {
   grid-template-rows: 1fr 1fr;
   row-gap: 0rem;
   background-color: #ffffffa1;
-  padding: 2rem;
+  padding: 3rem 4rem 3rem 4rem;
   font-size: 1.8rem;
   font-family: PT Sans Narrow;
   border-radius: 3rem;
@@ -137,10 +133,10 @@ html {
 .info-grid .place {
   padding-left: 4rem;
 }
-
 .info-grid .day,
 .info-grid .date {
   padding-right: 4rem;
+  /* padding-left: 4rem; */
 }
 .info-grid .day,
 .info-grid .time {

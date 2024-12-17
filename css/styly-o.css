@@ -5,6 +5,7 @@
 }
 html {
   font-size: 10px;
+  overflow-x: hidden;
 }
 .everything {
   overflow: clip;
@@ -39,31 +40,96 @@ html {
   color: #000;
   font-size: 1.5rem;
   padding-bottom: 0.2rem;
-  border-bottom: 2px #ffffff00 solid;
+  border-bottom: 2px #daa52000 solid;
   text-transform: uppercase;
   font-weight: bolder;
   font-family: Arial, Helvetica, sans-serif;
 }
 .nav li .active {
-  border-bottom: 2px black solid;
+  border-bottom: 2px goldenrod solid;
 }
 .nav li a:active,
 .nav li a:hover {
-  border-bottom: 2px black solid;
+  border-bottom: 2px goldenrod solid;
   transition: 1s;
 }
 .nav li a:link,
 .nav li a:visited {
   color: #000;
 }
-/******  TIMELINE PAGE *******/
-/*  Timeline */
+
+/* mobile-nav */
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.icon-mobile-nav {
+  color: #ffffff;
+}
+
+.icon-mobile-nav[name="close"] {
+  display: none;
+}
+
+/* main-header */
 .main-header {
-  margin: 8rem 0 12rem 0;
+  margin: 8rem 1rem 12rem 1rem;
   font-size: 5rem;
   text-align: center;
   font-family: PT Sans Narrow;
 }
+
+/******  INCREIBLES PAGE *******/
+.incredibles-photo {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 4rem;
+  column-gap: 0;
+  max-width: 100%;
+  justify-items: center;
+}
+.photo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.photo .even {
+  margin-top: 5rem;
+}
+.photo img {
+  max-width: 100%;
+  height: 30rem;
+  object-fit: cover;
+  box-shadow: 0.5rem 1rem 2rem #00000038;
+}
+.photo h3 {
+  font-family: PT Sans Narrow;
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+.photo-last {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 6rem;
+}
+.photo-last img {
+  max-width: 100%;
+  height: 30rem;
+  object-fit: cover;
+  box-shadow: 0.5rem 1rem 2rem #00000038;
+}
+.photo-last h3 {
+  font-family: PT Sans Narrow;
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+/******  TIMELINE PAGE *******/
+/*  Timeline */
 .timeline {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -221,51 +287,8 @@ html {
   margin-top: 5rem;
 }
 
-/******  INCREIBLES PAGE *******/
-.incredibles-photo {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  row-gap: 4rem;
-  column-gap: 0;
-  max-width: 100%;
-  justify-items: center;
-}
-.photo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.photo .even {
-  margin-top: 5rem;
-}
-.photo img {
-  max-width: 100%;
-  height: 30rem;
-  object-fit: cover;
-  box-shadow: 0.5rem 1rem 2rem #00000038;
-}
-.photo h3 {
-  font-family: PT Sans Narrow;
-  font-size: 2rem;
-}
-.photo-last {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 6rem;
-}
-.photo-last img {
-  max-width: 100%;
-  height: 30rem;
-  object-fit: cover;
-}
-.photo-last h3 {
-  font-family: PT Sans Narrow;
-  font-size: 2rem;
-}
-
 /******  INFO PAGE *******/
-#nav-bar-transp {
+.nav-bar-transp {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -324,7 +347,6 @@ html {
   top: 40%;
   transform: translate(-50%, -50%);
   display: block;
-  /* font-family: Alice; */
   font-family: PT Sans Narrow;
   font-size: 5rem;
   letter-spacing: 0.5rem;
@@ -337,7 +359,6 @@ html {
   top: 80%;
   transform: translate(-50%, -50%);
   display: block;
-  /* font-family: Alice; */
   font-family: PT Sans Narrow;
   text-transform: uppercase;
   font-size: 3rem;
@@ -349,10 +370,9 @@ html {
   height: 100vh;
 }
 .payment h2 {
-  padding-top: 10rem;
+  padding-top: 5rem;
   padding-bottom: 10rem;
   text-align: center;
-  /* font-family: Alice; */
   font-family: PT Sans Narrow;
   font-size: 3rem;
   letter-spacing: 0.5rem;
@@ -388,49 +408,22 @@ html {
 }
 .dresscode {
   height: 100vh;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: 3rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.dresscode img {
+  width: 5rem;
+  height: 5rem;
+  align-self: center;
 }
 .dresscode p {
-  padding-top: 8rem;
   font-size: 2.5rem;
   font-family: PT Sans Narrow;
   text-align: center;
-}
-.article-one::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 20%;
-  transform: translateX(-50%);
-  background-image: url("../img/sunflower.avif");
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 5rem;
-  height: 5rem;
-}
-.article-two::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 40%;
-  transform: translateX(-50%);
-  background-image: url("../img/sunflower.avif");
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 5rem;
-  height: 5rem;
-}
-.article-three::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 60%;
-  transform: translateX(-50%);
-  background-image: url("../img/sunflower.avif");
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 5rem;
-  height: 5rem;
 }
 .colour-circles {
   display: flex;
@@ -439,7 +432,6 @@ html {
   gap: 2rem;
 }
 .yellow {
-  margin-top: 5rem;
   width: 5rem;
   height: 5rem;
   border-radius: 50%;
@@ -474,11 +466,14 @@ html {
   grid-template-rows: 1fr 1fr;
   row-gap: 2rem;
   justify-content: space-around;
-  padding-top: 10rem;
+  /* padding-top: 10rem; */
+  /* align-content: center; */
   font-size: 2.5rem;
   font-family: PT Sans Narrow;
   text-align: center;
   height: 100vh;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 .accomodation img {
   width: 20%;
@@ -507,11 +502,12 @@ html {
   grid-template-rows: 1fr 1fr;
   row-gap: 2rem;
   justify-content: space-around;
-  padding-top: 10rem;
   font-size: 2.5rem;
   font-family: PT Sans Narrow;
   text-align: center;
   height: 100vh;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 .entertainment img {
   width: 20%;
@@ -522,7 +518,6 @@ html {
   color: #000;
   text-decoration: none;
   font-weight: bold;
-  /* font */
 }
 
 /******  FOOTER *******/

@@ -1,6 +1,23 @@
 "use strict";
+////// MOBILE-NAVIGATION //////
+const btnNavEl = document.querySelector(".btn-mobile-nav");
+const headerEl = document.querySelector("#nav-bar");
+
+btnNavEl.addEventListener("click", function () {
+  headerEl.classList.toggle("nav-open");
+});
+
+const allLinks = document.querySelectorAll(".lin");
+
+allLinks.forEach(function (link) {
+  link.addEventListener("click", function (e) {
+    if (link.classList.contains("lin")) headerEl.classList.toggle("nav-open");
+  });
+});
+
+////// COUNTDOWN //////
 const countDown = () => {
-  const targetDate = new Date("December 12, 2024 21:10:30").getTime();
+  const targetDate = new Date("June 28, 2025 13:00:00").getTime();
 
   const timer = setInterval(() => {
     const now = new Date().getTime();

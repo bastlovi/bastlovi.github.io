@@ -15,16 +15,13 @@
     />
 
     <link rel="stylesheet" href="css/styly-o.css" />
-    <link rel="stylesheet" href="css/queries.css" />
+    <link rel="stylesheet" href="css/queries-o.css" />
   </head>
   <body>
     <header>
       <nav id="nav-bar">
-        <!-- <a href="index.html" id="logo">
-                <img src="img/logo.avif" loading="eager" width="141px" height="85px" alt="dentefect">
-            </a> -->
         <ul class="nav">
-          <li><a href="index.html">O nás</a></li>
+          <li><a href="index.html">Úvod</a></li>
           <li>
             <a href="incredibles.html">Úžasňáci</a>
           </li>
@@ -36,10 +33,10 @@
           </li>
           <li><a href="info.html">Informace</a></li>
         </ul>
-        <!-- <button class="btn-mobile-nav" title="Menu">
-                <img src="img/menu.svg" class="icon-mobile-nav" name="menu" aria-hidden="true" width="18px" height="20px" alt="menu ikona"></img>
-                <img fetchpriority="low" loading="lazy" src="img/close.svg" class="icon-mobile-nav" name="close" aria-hidden="true" width="18px" height="20px" alt="menu ikona"></img>
-            </button> -->
+        <button class="btn-mobile-nav" title="Menu">
+          <img src="img/menu.svg" class="icon-mobile-nav" name="menu" aria-hidden="true" width="30px" fetchpriority="high" loading="eager" height="30px" alt="menu ikona"></img>
+          <img fetchpriority="low" loading="lazy" src="img/close.svg" class="icon-mobile-nav" name="close" aria-hidden="true" width="30px" height="30px" alt="menu ikona"></img>
+      </button>
       </nav>
     </header>
     <main>
@@ -47,55 +44,59 @@
         <h1 class="main-header">Tady společně oslavíme naši svatbu</h1>
         <div class="stodola-photo">
           <div class="no-flow">
-            <img src="img/stodola1.avif" alt="" height="300px" width="300px" />
+            <img src="img/stodola1.avif" alt="stodola" fetchpriority="high" loading="eager" height="300px" width="300px" />
           </div>
           <div class="no-flow">
             <img
               class="even"
               src="img/stodola2.avif"
-              alt=""
+              alt="stodola"
+              fetchpriority="high" loading="eager"
               height="300px"
               width="300px"
             />
           </div>
           <div class="no-flow">
-            <img src="img/stodola3.avif" alt="" height="300px" width="300px" />
+            <img src="img/stodola3.avif" alt="stodola" fetchpriority="high" loading="eager" height="300px" width="300px" />
           </div>
           <div class="no-flow">
             <img
               class="even"
               src="img/stodola4.avif"
-              alt=""
+              alt="stodola"
+              fetchpriority="low" loading="lazy"
               height="300px"
               width="300px"
             />
           </div>
           <div class="no-flow">
-            <img src="img/stodola5.avif" alt="" height="300px" width="300px" />
+            <img src="img/stodola5.avif" alt="stodola" fetchpriority="low" loading="lazy" height="300px" width="300px" />
           </div>
           <div class="no-flow">
             <img
               class="even"
               src="img/stodola6.avif"
-              alt=""
+              alt="stodola"
+              fetchpriority="low" loading="lazy"
               height="300px"
               width="300px"
             />
           </div>
           <div class="no-flow">
-            <img src="img/stodola7.avif" alt="" height="300px" width="300px" />
+            <img src="img/stodola7.avif" alt="stodola" fetchpriority="low" loading="lazy" height="300px" width="300px" />
           </div>
           <div class="no-flow">
             <img
               class="even"
               src="img/stodola8.avif"
-              alt=""
+              alt="stodola"
+              fetchpriority="low" loading="lazy"
               height="300px"
               width="300px"
             />
           </div>
           <div class="no-flow">
-            <img src="img/stodola9.avif" alt="" height="300px" width="300px" />
+            <img src="img/stodola9.avif" alt="stodola" fetchpriority="low" loading="lazy" height="300px" width="300px" />
           </div>
         </div>
       </div>
@@ -104,4 +105,5 @@
       <p>Copyrigth © ÚŽASŇÁCI</p>
     </footer>
   </body>
+  <script src="script.js" async></script>
 </html>
