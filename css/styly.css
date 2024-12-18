@@ -11,10 +11,10 @@ html {
   src: url(../font/PTSansNarrow-Regular.ttf) format("truetype");
   font-display: swap;
 }
-/* *:focus-visible {
+*:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 0.8em rgba(251, 168, 52, 0.5);
-} */
+  box-shadow: 0 0 0 0.8rem rgba(251, 168, 52, 0.5);
+}
 /******  HEADER *******/
 #nav-bar {
   display: flex;

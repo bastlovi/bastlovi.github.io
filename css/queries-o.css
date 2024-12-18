@@ -48,8 +48,12 @@
     color: #000;
     border-bottom: none;
   }
+  .btn-mobile-nav {
+    display: block;
+    z-index: 2;
+  }
   .nav {
-    position: absolute;
+    position: fixed;
     background-color: #ffffffe3;
     top: 0;
     left: 0;
@@ -76,10 +80,6 @@
   }
   .nav-open .icon-mobile-nav[name="menu"] {
     display: none;
-  }
-  .btn-mobile-nav {
-    display: block;
-    z-index: 2;
   }
   .main-header {
     margin: 4rem 1rem 6rem 1rem;
