@@ -131,6 +131,9 @@
   .stodola-photo {
     grid-template-columns: 1fr;
   }
+  .stodola-photo .even {
+    margin-top: 0;
+  }
 }
 @media only screen and (max-width: 36em) {
   .payment {

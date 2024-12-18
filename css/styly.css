@@ -6,7 +6,11 @@
 html {
   font-size: 62.5%;
 }
-
+@font-face {
+  font-family: PT Sans Narrow;
+  src: url(../font/PTSansNarrow-Regular.ttf) format("truetype");
+  font-display: swap;
+}
 /* *:focus-visible {
   outline: none;
   box-shadow: 0 0 0 0.8em rgba(251, 168, 52, 0.5);
@@ -136,7 +140,6 @@ html {
 .info-grid .day,
 .info-grid .date {
   padding-right: 4rem;
-  /* padding-left: 4rem; */
 }
 .info-grid .day,
 .info-grid .time {
