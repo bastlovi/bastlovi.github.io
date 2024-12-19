@@ -14,7 +14,7 @@
   .stodola-photo {
     grid-template-columns: 1fr 1fr;
   }
-  .dresscode {
+  .info-dresscode {
     height: auto;
     margin-bottom: 3rem;
   }
@@ -134,6 +134,41 @@
   .stodola-photo .even {
     margin-top: 0;
   }
+  .info-accomodation {
+    margin-bottom: 5rem;
+  }
+  .accomodation {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    height: auto;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+  }
+  .accomodation-car {
+    grid-row: 2;
+  }
+  .accomodation-bed {
+    grid-row: 4;
+  }
+  .info-entertainment {
+    margin-bottom: 5rem;
+  }
+  .entertainment {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    height: auto;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+  }
+  .entertainment-food {
+    grid-row: 2;
+  }
+  .entertainment-ban {
+    grid-row: 4;
+  }
+  .entertainment-music {
+    grid-row: 6;
+  }
 }
 @media only screen and (max-width: 36em) {
   .payment {
@@ -155,35 +190,6 @@
   }
   .yellow {
     margin-bottom: 5rem;
-  }
-  .accomodation {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr);
-    height: auto;
-    margin-top: 5rem;
-    margin-bottom: 3rem;
-  }
-  .accomodation-car {
-    grid-row: 2;
-  }
-  .accomodation-bed {
-    grid-row: 4;
-  }
-  .entertainment {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 1fr);
-    height: auto;
-    margin-top: 5rem;
-    margin-bottom: 3rem;
-  }
-  .entertainment-food {
-    grid-row: 2;
-  }
-  .entertainment-ban {
-    grid-row: 4;
-  }
-  .entertainment-music {
-    grid-row: 6;
   }
 }
 
