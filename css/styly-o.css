@@ -395,6 +395,8 @@ html {
 }
 .options span {
   font-size: 1.5rem;
+  text-decoration: none;
+  color: #000;
 }
 .options .number {
   font-size: 8rem;
