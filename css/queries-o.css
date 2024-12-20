@@ -1,4 +1,20 @@
 /********************/
+/* LAPTOP L 1440px */
+/********************/
+@media only screen and (max-width: 90em) {
+  .info-dresscode {
+    height: auto;
+  }
+  .incredibles-photo {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 10rem;
+    column-gap: 0;
+    max-width: 100%;
+    justify-items: center;
+  }
+}
+/********************/
 /* LAPTOP 1024px */
 /********************/
 @media only screen and (max-width: 64em) {
@@ -14,9 +30,8 @@
   .stodola-photo {
     grid-template-columns: 1fr 1fr;
   }
-  .info-dresscode {
-    height: auto;
-    margin-bottom: 3rem;
+  .yellow-circle-1 {
+    left: -5%;
   }
 }
 
@@ -233,8 +248,6 @@
   .yellow-circle-2 {
     width: 75rem;
     height: 75rem;
-    bottom: 15%;
-    left: 45%;
   }
   footer p {
     margin: 10rem 3rem 0 3rem;

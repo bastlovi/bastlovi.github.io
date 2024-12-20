@@ -92,7 +92,7 @@ html {
 .incredibles-photo {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  row-gap: 4rem;
+  row-gap: 30rem;
   column-gap: 0;
   max-width: 100%;
   justify-items: center;
@@ -250,7 +250,6 @@ html {
   border-radius: 50%;
   position: absolute;
   top: 15%;
-  left: -5%;
   z-index: -1;
 }
 .yellow-circle-2 {
@@ -271,7 +270,7 @@ html {
 .stodola-photo {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  row-gap: 3rem;
+  row-gap: 10rem;
   column-gap: 0;
   max-width: 100%;
   justify-items: center;
@@ -415,6 +414,7 @@ html {
 .info-dresscode {
   height: 100vh;
   align-content: center;
+  margin-bottom: 3rem;
 }
 .dresscode {
   display: flex;
