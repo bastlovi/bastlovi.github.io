@@ -5,6 +5,7 @@
 }
 html {
   font-size: 62.5%;
+  font-family: PT Sans Narrow;
 }
 @font-face {
   font-family: PT Sans Narrow;
@@ -30,7 +31,6 @@ html {
   align-items: center;
   justify-content: space-around;
   width: 100%;
-  height: 8rem;
   z-index: 1;
 }
 .nav {
@@ -38,20 +38,20 @@ html {
   align-items: center;
   justify-content: flex-end;
   flex-basis: auto;
-  gap: 5rem;
-  margin-right: 2rem;
+  gap: 4rem;
+  margin: 4rem 0 4rem 0;
   z-index: 2;
   list-style: none;
 }
 .nav li a {
   text-decoration: none;
   color: #000;
-  font-size: 1.5rem;
-  padding-bottom: 0.2rem;
+  font-size: 1.9rem;
+  padding: 1rem 1rem 0.5rem 1rem;
   border-bottom: 2px #daa52000 solid;
   text-transform: uppercase;
   font-weight: bolder;
-  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0.2rem;
 }
 .nav li .active {
   border-bottom: 2px goldenrod solid;
@@ -297,7 +297,6 @@ html {
   align-items: center;
   justify-content: space-around;
   width: 100%;
-  height: 8rem;
   z-index: 1;
   position: absolute;
   background-color: transparent;
@@ -307,20 +306,20 @@ html {
   align-items: center;
   justify-content: flex-end;
   flex-basis: auto;
-  gap: 5rem;
-  margin-right: 2rem;
+  gap: 4rem;
+  margin: 4rem 0 4rem 0;
   z-index: 2;
   list-style: none;
 }
 .nav-transp li a {
   text-decoration: none;
   color: #fff;
-  font-size: 1.5rem;
-  padding-bottom: 0.2rem;
+  font-size: 1.9rem;
+  padding: 1rem 1rem 0.5rem 1rem;
   border-bottom: 2px #ffffff00 solid;
   text-transform: uppercase;
   font-weight: bolder;
-  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0.2rem;
 }
 .nav-transp li .active {
   border-bottom: 2px #fff solid;
@@ -337,13 +336,13 @@ html {
 .info-one {
   max-width: 100%;
   max-height: 100vh;
-  overflow: hidden;
   z-index: 0;
 }
 .info-one img {
   width: 100%;
   height: 100vh;
   object-fit: cover;
+  background-color: #373737;
 }
 .main-header.info {
   position: absolute;
@@ -388,6 +387,7 @@ html {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   row-gap: 2rem;
+  column-gap: 1rem;
   justify-content: space-around;
   font-size: 2.5rem;
   font-family: PT Sans Narrow;
@@ -397,6 +397,7 @@ html {
   font-size: 1.5rem;
   text-decoration: none;
   color: #000;
+  font-weight: bolder;
 }
 .options .number {
   font-size: 8rem;
@@ -481,6 +482,7 @@ html {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   row-gap: 2rem;
+  column-gap: 1rem;
   justify-content: space-around;
   font-size: 2.5rem;
   font-family: PT Sans Narrow;
@@ -519,6 +521,7 @@ html {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   row-gap: 2rem;
+  column-gap: 1rem;
   justify-content: space-around;
   font-size: 2.5rem;
   font-family: PT Sans Narrow;

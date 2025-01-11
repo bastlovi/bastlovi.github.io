@@ -1,7 +1,7 @@
 /********************/
 /* LAPTOP L 1440px */
 /********************/
-@media only screen and (max-width: 90em) {
+@media (max-width: 90em) {
   .info-dresscode {
     height: auto;
   }
@@ -17,7 +17,7 @@
 /********************/
 /* LAPTOP 1024px */
 /********************/
-@media only screen and (max-width: 64em) {
+@media (max-width: 64em) {
   .incredibles-photo {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -38,7 +38,7 @@
 /********************/
 /* TABLET 768px */
 /********************/
-@media only screen and (max-width: 48em) {
+@media (max-width: 48em) {
   .nav-transp li a {
     color: #000;
     border-bottom: none;
@@ -139,7 +139,7 @@
   }
 }
 
-@media only screen and (max-width: 41em) {
+@media (max-width: 41em) {
   html {
     font-size: 55%;
   }
@@ -185,7 +185,7 @@
     grid-row: 6;
   }
 }
-@media only screen and (max-width: 36em) {
+@media (max-width: 36em) {
   .payment {
     height: auto;
     margin-bottom: 3rem;
@@ -208,7 +208,7 @@
   }
 }
 
-@media only screen and (max-width: 31em) {
+@media (max-width: 31em) {
   .incredibles-photo {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -257,12 +257,12 @@
 /********************/
 /* MOBILE 1024px */
 /********************/
-@media only screen and (max-width: 27em) {
+@media (max-width: 27em) {
   html {
     font-size: 50%;
   }
 }
-@media only screen and (max-width: 23em) {
+@media (max-width: 23em) {
   html {
     font-size: 45%;
   }

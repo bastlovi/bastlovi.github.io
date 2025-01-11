@@ -1,12 +1,12 @@
 /********************/
 /* LAPTOP 1024px */
 /********************/
-@media only screen and (max-width: 64em) {
+@media (max-width: 64em) {
   html {
     font-size: 60%;
   }
 }
-@media only screen and (max-width: 54em) {
+@media (max-width: 54em) {
   #main-photo img {
     object-position: center;
   }
@@ -15,7 +15,7 @@
 /********************/
 /* TABLET 768px */
 /********************/
-@media only screen and (max-width: 48em) {
+@media (max-width: 48em) {
   .nav li a {
     color: #000;
     border-bottom: none;
@@ -67,12 +67,12 @@
 /********************/
 /* MOBILE 1024px */
 /********************/
-@media only screen and (max-width: 27em) {
+@media (max-width: 27em) {
   html {
     font-size: 50%;
   }
 }
-@media only screen and (max-width: 23em) {
+@media (max-width: 23em) {
   html {
     font-size: 45%;
   }
