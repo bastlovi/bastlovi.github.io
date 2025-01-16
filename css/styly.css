@@ -6,10 +6,11 @@
 html {
   font-size: 62.5%;
   font-family: PT Sans Narrow, Arial, Helvetica, sans-serif;
+  background-color: #373737;
 }
 @font-face {
   font-family: PT Sans Narrow;
-  src: url(../font/PTSansNarrow-Regular.ttf) format("truetype");
+  src: url(../font/PTSans-Narrow.woff2) format("woff2");
   font-display: swap;
 }
 *:focus-visible {
@@ -17,14 +18,14 @@ html {
   box-shadow: 0 0 0 0.8rem rgba(251, 168, 52, 0.5);
 }
 /******  HEADER *******/
-#nav-bar {
+.nav-bar {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  position: fixed;
   width: 100%;
-  background-color: transparent;
   z-index: 1;
+  position: absolute;
+  background-color: transparent;
 }
 
 .nav {
@@ -62,6 +63,7 @@ html {
   background: none;
   cursor: pointer;
   display: none;
+  margin-top: 1rem;
 }
 
 .icon-mobile-nav {
@@ -73,23 +75,37 @@ html {
 }
 
 /******  MAIN-PAGE *******/
-#main-photo {
+.main-photo {
   max-width: 100%;
-  max-height: 100vh;
+  min-height: 100vh;
   overflow: hidden;
 }
-#main-photo img {
+.main-photo img {
   width: 100%;
   height: 100vh;
   object-fit: cover;
   object-position: 0 -9rem;
   background-color: #373737;
+  /* z-index: 0; */
 }
-.text {
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+  z-index: 1;
   position: absolute;
   left: 50%;
-  top: 25%;
+  top: 55%;
   transform: translate(-50%, -50%);
+  z-index: 0;
+}
+.text {
+  /* position: absolute;
+  left: 50%;
+  top: 25%;
+  transform: translate(-50%, -50%); */
   display: block;
   font-family: PT Sans Narrow;
   font-size: 5rem;
@@ -97,11 +113,11 @@ html {
   color: #fff;
   text-align: center;
 }
-#countdown {
-  position: absolute;
+.countdown {
+  /* position: absolute;
   left: 50%;
   top: 40%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -116,10 +132,10 @@ html {
   font-weight: bold;
 }
 .info-grid {
-  position: absolute;
+  /* position: absolute;
   left: 50%;
   top: 60%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -158,10 +174,10 @@ a .survio {
   color: black;
 }
 .survio {
-  position: absolute;
+  /* position: absolute;
   left: 50%;
   top: 85%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
   background-color: #ffd7476e;
   text-transform: uppercase;
   letter-spacing: 0.1rem;

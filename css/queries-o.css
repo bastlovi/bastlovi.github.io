@@ -44,6 +44,8 @@
     border-bottom: none;
     padding-bottom: 0;
     border-bottom: none;
+    font-size: 3rem;
+    padding-bottom: 1rem;
   }
   .nav li a {
     color: #000;
@@ -51,6 +53,7 @@
     padding-bottom: 0;
     border-bottom: none;
     font-size: 3rem;
+    padding-bottom: 1rem;
   }
   .nav li a:active,
   .nav li a:hover {
@@ -66,6 +69,8 @@
   .btn-mobile-nav {
     display: block;
     z-index: 2;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
   .nav {
     position: fixed;
@@ -83,6 +88,7 @@
     transform: translateX(100%);
     pointer-events: none;
     visibility: hidden;
+    margin: 0;
   }
   .nav-open .nav {
     opacity: 1;
@@ -137,6 +143,17 @@
     transition: none;
     opacity: 1;
   }
+  .info-accomodation {
+    margin-bottom: 5rem;
+    height: auto;
+  }
+  .info-entertainment {
+    height: auto;
+  }
+  .payment {
+    height: auto;
+    margin-bottom: 5rem;
+  }
 }
 
 @media (max-width: 41em) {
@@ -148,9 +165,6 @@
   }
   .stodola-photo .even {
     margin-top: 0;
-  }
-  .info-accomodation {
-    margin-bottom: 5rem;
   }
   .accomodation {
     grid-template-columns: 1fr;
@@ -186,10 +200,6 @@
   }
 }
 @media (max-width: 36em) {
-  .payment {
-    height: auto;
-    margin-bottom: 3rem;
-  }
   .options {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);

@@ -26,7 +26,7 @@ html {
 }
 
 /******  HEADER *******/
-#nav-bar {
+.nav-bar {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -72,6 +72,7 @@ html {
   background: none;
   cursor: pointer;
   display: none;
+  margin-top: 1rem;
 }
 .icon-mobile-nav {
   color: #ffffff;
