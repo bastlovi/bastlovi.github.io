@@ -107,7 +107,6 @@ html {
   top: 25%;
   transform: translate(-50%, -50%); */
   display: block;
-  font-family: PT Sans Narrow;
   font-size: 5rem;
   letter-spacing: 0.5rem;
   color: #fff;
@@ -122,7 +121,6 @@ html {
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   column-gap: 2rem;
-  font-family: PT Sans Narrow;
   font-size: 3rem;
   color: #fff;
   justify-items: center;
@@ -143,7 +141,6 @@ html {
   background-color: #ffffffa1;
   padding: 3rem 4rem 3rem 4rem;
   font-size: 1.8rem;
-  font-family: PT Sans Narrow;
   border-radius: 3rem;
   text-align: center;
 }
@@ -184,7 +181,6 @@ a .survio {
   text-align: center;
   font-weight: bold;
   font-size: 2rem;
-  font-family: PT Sans Narrow;
   padding: 3rem;
   border-radius: 3rem;
 }
