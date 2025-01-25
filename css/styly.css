@@ -7,6 +7,7 @@ html {
   font-size: 62.5%;
   font-family: PT Sans Narrow, Arial, Helvetica, sans-serif;
   background-color: #373737;
+  text-decoration: none;
 }
 @font-face {
   font-family: PT Sans Narrow;
@@ -39,7 +40,7 @@ html {
   list-style: none;
 }
 
-.nav li a {
+.nav a {
   text-decoration: none;
   color: #ffffff71;
   font-size: 1.9rem;
@@ -50,8 +51,8 @@ html {
   letter-spacing: 0.2rem;
 }
 
-.nav li a:active,
-.nav li a:hover {
+.nav a:active,
+.nav a:hover {
   color: #fff;
   border-bottom: 2px #fff solid;
   transition: 1s;
@@ -166,10 +167,6 @@ html {
 .info-grid .date {
   padding-top: 0.5rem;
 }
-a .survio {
-  text-decoration: none;
-  color: black;
-}
 .survio {
   /* position: absolute;
   left: 50%;
@@ -177,12 +174,16 @@ a .survio {
   transform: translate(-50%, -50%); */
   background-color: #ffd7476e;
   text-transform: uppercase;
-  letter-spacing: 0.1rem;
   text-align: center;
+  letter-spacing: 0.1rem;
   font-weight: bold;
   font-size: 2rem;
   padding: 3rem;
   border-radius: 3rem;
+}
+.survio a {
+  text-decoration: none;
+  color: black;
 }
 .survio:hover {
   background-color: #f0c116;

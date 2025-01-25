@@ -43,7 +43,7 @@ html {
   z-index: 2;
   list-style: none;
 }
-.nav li a {
+.nav a {
   text-decoration: none;
   color: #000;
   font-size: 1.9rem;
@@ -53,16 +53,16 @@ html {
   font-weight: bolder;
   letter-spacing: 0.2rem;
 }
-.nav li .active {
+.nav .active {
   border-bottom: 2px goldenrod solid;
 }
-.nav li a:active,
-.nav li a:hover {
+.nav a:active,
+.nav a:hover {
   border-bottom: 2px goldenrod solid;
   transition: 1s;
 }
-.nav li a:link,
-.nav li a:visited {
+.nav a:link,
+.nav a:visited {
   color: #000;
 }
 
@@ -308,7 +308,7 @@ html {
   z-index: 2;
   list-style: none;
 }
-.nav-transp li a {
+.nav-transp a {
   text-decoration: none;
   color: #fff;
   font-size: 1.9rem;
@@ -318,16 +318,16 @@ html {
   font-weight: bolder;
   letter-spacing: 0.2rem;
 }
-.nav-transp li .active {
+.nav-transp .active {
   border-bottom: 2px #fff solid;
 }
-.nav-transp li a:active,
-.nav-transp li a:hover {
+.nav-transp a:active,
+.nav-transp a:hover {
   border-bottom: 2px #fff solid;
   transition: 1s;
 }
-.nav-transp li a:link,
-.nav-transp li a:visited {
+.nav-transp a:link,
+.nav-transp a:visited {
   color: #fff;
 }
 .info-one {
@@ -531,10 +531,36 @@ html {
 }
 
 /******  FOOTER *******/
-footer p {
+footer .copyright {
   margin: 10rem 10rem 0 10rem;
   padding: 1rem 0 2rem 0;
   font-size: 2rem;
   text-align: center;
   border-top: 2px dotted goldenrod;
+}
+.authors {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: right;
+  font-size: 1.5rem;
+  border-top: none;
+  margin: 0 2rem 1rem 0;
+  padding: 1rem;
+  color: #000000;
+}
+.authors a {
+  text-decoration: none;
+  border-bottom: 2px #00000000 solid;
+  color: #000;
+}
+.authors a:active,
+.authors a:hover {
+  border-bottom: 2px #000000 solid;
+  /* padding-bottom: 0.2rem; */
+  transition: 0.5s;
+}
+.authors li a:link,
+.authors li a:visited {
+  color: #000;
 }

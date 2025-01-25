@@ -39,7 +39,7 @@
 /* TABLET 768px */
 /********************/
 @media (max-width: 48em) {
-  .nav-transp li a {
+  .nav-transp a {
     color: #000;
     border-bottom: none;
     padding-bottom: 0;
@@ -47,22 +47,31 @@
     font-size: 3rem;
     padding-bottom: 1rem;
   }
-  .nav li a {
-    color: #000;
-    border-bottom: none;
-    padding-bottom: 0;
-    border-bottom: none;
-    font-size: 3rem;
-    padding-bottom: 1rem;
-  }
-  .nav li a:active,
-  .nav li a:hover {
+  .nav-transp a:active,
+  .nav-transp a:hover {
     color: #000;
     border-bottom: none;
     transition: none;
   }
-  .nav li a:link,
-  .nav li a:visited {
+  .nav-transp a:link,
+  .nav-transp a:visited {
+    color: #000;
+    border-bottom: none;
+  }
+  .nav a {
+    color: #000;
+    border-bottom: none;
+    font-size: 3rem;
+    padding-bottom: 1rem;
+  }
+  .nav a:active,
+  .nav a:hover {
+    color: #000;
+    border-bottom: none;
+    transition: none;
+  }
+  .nav a:link,
+  .nav a:visited {
     color: #000;
     border-bottom: none;
   }
@@ -259,7 +268,7 @@
     width: 75rem;
     height: 75rem;
   }
-  footer p {
+  footer .copyright {
     margin: 10rem 3rem 0 3rem;
   }
 }

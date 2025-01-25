@@ -20,16 +20,14 @@
     overflow: clip;
     position: relative;
   }
-  .nav li a {
+  .nav a {
     color: #000;
-    border-bottom: none;
-    padding-bottom: 0;
     border-bottom: none;
     font-size: 3rem;
     padding-bottom: 1rem;
   }
-  .nav li a:active,
-  .nav li a:hover {
+  .nav a:active,
+  .nav a:hover {
     color: #000;
     border-bottom: none;
     transition: none;
