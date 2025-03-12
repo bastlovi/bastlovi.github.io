@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://bastlovi.github.io/</loc>
+    <lastmod>2025-03-11</lastmod>
+    <priority>1.0</priority>
+    <changefreq>daily</changefreq>
+  </url>
+
+  <url>
+    <loc>https://bastlovi.github.io/incredibles</loc>
+    <lastmod>2025-03-11</lastmod>
+    <priority>0.9</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://bastlovi.github.io/timeline</loc>
+    <lastmod>2025-03-11</lastmod>
+    <priority>0.9</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://bastlovi.github.io/stodola</loc>
+    <lastmod>2025-03-11</lastmod>
+    <priority>0.9</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://bastlovi.github.io/info</loc>
+    <lastmod>2025-03-11</lastmod>
+    <priority>0.9</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+
+</urlset>
